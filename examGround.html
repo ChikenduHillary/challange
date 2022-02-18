@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/hacker.png">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/examGround.css">
+    <title>Exam Ground</title>
+</head>
+<body onload="callSubjects()">
+    <!-- Exit button to Home and Exam -->
+    <a href="index.html">
+        <div class="exit">
+            <i class="fa fa-home" id="home-icon"></i>
+            <div class="exit1" id="exit-div1" hidden></div>
+            <div class="exit2" id="exit-div2" hidden></div>
+        </div>
+    </a>
+
+    <!-- Summary Section -->
+    <div class="summary" id="summary">
+        <div class="heading"><h1 id="sub-heading">Physics</h1></div>
+        <div class="challange-container">
+            <div class="challange">
+                <div class="image">
+                    <img src="" alt="Physics" id="sub-image">
+                    <video src="" muted loop autoplay hidden id="sub-video"></video>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="percent"><span id="sub-progress1"></span><span id="sub-progress2"></span></div>
+                        <div class="progress" id="sub-progress-bar"></div>
+                    </div>
+                    <button>Tap to take a Challange</button>
+                </div>
+            </div>
+            <div class="satistics">
+                <div class="challange">
+                    <div class="image-container">
+                        <div><img src="images/You.png" alt="You"></div>
+                        <div><span id="score1">4:4</span></div>
+                        <div><img src="images/Computer.png" alt="Computer"></div>
+                    </div>
+                    <div class="dates"><span id="time1">10:00am</span><span id="date1">20/02/2020</span></div>
+                </div>
+                <div class="challange">
+                    <div class="image-container">
+                        <div><img src="images/You.png" alt="You"></div>
+                        <div><span id="score2">4:5</span></div>
+                        <div><img src="images/Computer.png" alt="Computer"></div>
+                    </div>
+                    <div class="dates"><span id="time2">10:00am</span><span id="date2">20/02/2020</span></div>
+                </div>
+                <div class="challange">
+                    <div class="image-container">
+                        <div><img src="images/You.png" alt="Ypu"></div>
+                        <div><span id="score3">5:2</span></div>
+                        <div><img src="images/Computer.png" alt=""></div>
+                    </div>
+                    <div class="dates"><span id="time3">10:00am</span><span id="date3">20/02/2020</span></div>
+                </div>
+                <div class="challange">
+                    <div class="image-container">
+                        <div><img src="images/You.png" alt="Ypu"></div>
+                        <div><span id="score4">3:4</span></div>
+                        <div><img src="images/Computer.png" alt=""></div>
+                    </div>
+                    <div class="dates"><span id="time4">10:00am</span><span id="date4">20/02/2020</span></div>
+                </div>
+                <div class="challange">
+                    <div class="image-container">
+                        <div><img src="images/You.png" alt="Ypu"></div>
+                        <div><span id="score5">1:0</span></div>
+                        <div><img src="images/Computer.png" alt=""></div>
+                    </div>
+                    <div class="dates"><span id="time5">10:00am</span><span id="date5">20/02/2020</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exam Section -->
+    <div class="exampage" hidden>
+        <div class="timer"><div></div></div>
+        <div class="question-container">
+            <p><span>1.</span>
+                ratione accusantium libero necessitatibus ducimus? Pariatur enim totam molestiae minima.
+            </p>
+        </div>
+        <form>
+            <div class="options-container">
+                <div>
+                    <input type="radio" name="options" value="">
+                    <label for="">Red</label>
+                </div>
+                <div>
+                    <input type="radio" name="options" value="">
+                    <label for="">green</label>
+                </div>
+                <div>
+                    <input type="radio" name="options" value="">
+                    <label for="">white</label>
+                </div>
+                <div>
+                    <input type="radio" name="options" value="">
+                    <label for="">Yellow</label>
+                </div>
+            </div>
+            <div class="check-answers"><div><button>Check</button></div></div>
+        </form>
+    </div>
+
+    <!-- Correction Section -->
+    <div class="corrections" hidden>
+        <div class="correction-header"><h2>Corrections</h2></div>
+        <div class="questions">
+             <p> <span>1.</span> doloribus non fugiat, quis modi quidem tempora alias asperiores autem ab expedita officia!</p>
+        </div>
+        <div class="opponent-answers">
+            <div class="you">
+                <img src="images/You.png" alt="You">
+                <div>
+                    <span>Correct!</span>
+                    <i class="fa fa-check" aria-hidden="true"></i>  
+                </div>
+            </div>
+            <div class="computer">
+                <img src="images/Computer.png" alt="You">
+                <div>
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                    <span>Wrong</span>
+                </div>
+            </div>
+        </div>
+        <div class="answers">
+            <form>
+                    <div>
+                        <input type="radio" name="options" value="">
+                        <label for="">Red</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="options" value="">
+                        <label for="">green</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="options" value="">
+                        <label for="">white</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="options" value="">
+                        <label for="">Yellow</label>
+                    </div>
+            </form>
+        </div>
+        <div class="nextPrev-buttons">
+            <button class="prev">Prev</button>
+            <button class="next">Next</button>
+        </div>
+    </div>
+
+    <!-- Results Container -->
+    <div class="results" hidden>
+        <div class="winLost"><h2>You Won!</h2></div>
+        <div class="scores">
+            <div class="score-container">
+                <div>
+                    <img src="images/You.png" alt="You">
+                    <h3>You</h3>
+                </div>
+                <div class="span"><span>5:0</span></div>
+                <div>
+                    <img src="images/Computer.png" alt="Computer">
+                    <h3>Computer</h3>
+                </div>
+            </div>
+        </div>
+        <div class="score2">
+            <div class="score2-container">
+                <div><i class="fa fa-check" aria-hidden="true"></i><span>1</span><i class="fa fa-times" aria-hidden="true"></i></div>
+                <div><i class="fa fa-check" aria-hidden="true"></i><span>2</span><i class="fa fa-times" aria-hidden="true"></i></div>
+                <div><i class="fa fa-check" aria-hidden="true"></i><span>3</span><i class="fa fa-times" aria-hidden="true"></i></div>
+                <div><i class="fa fa-check" aria-hidden="true"></i><span>4</span><i class="fa fa-times" aria-hidden="true"></i></div>
+                <div><i class="fa fa-check" aria-hidden="true"></i><span>5</span><i class="fa fa-times" aria-hidden="true"></i></div>
+            </div>
+        </div>
+        <div class="rematch-container">
+            <div>
+                <button>Rematch</button>
+                <span>View Corrections</span>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="javaScripts/script.js"></script>
+</body>
+</html>

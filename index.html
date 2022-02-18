@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/hacker.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <title>Challange</title>
+</head>
+<body>
+        <!-- Dark Mode Switch -->
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch">
+                <input type="checkbox" id="dark-mode-switch">
+                <div class="slider round"></div>
+            </label>
+            <span id="toggle-icon">
+             <i class="fas fa-sun" id="mode2"></i>
+         </span>
+        </div>
+
+    <div class="navigations">
+    <!-- Menu Overlay -->
+        <div class="overlay overlay-slide-left" id="overlay">
+        <nav>
+            <div id='nav-1' class="slide-out-1">
+                    <div class="level">
+                        <img src="images/You.png" alt="User">
+                        <h3>level 1</h3>
+                    </div>
+                    <div class="mode-change">
+                        <span>Total Wins: 200</span><i class="fas fa-moon" id="mode"></i>
+                    </div>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <div class="cool-bar"></div>
+                    <li id='nav-2' class="slide-out-2"><a href="#home">Home</a></li>
+                    <li id='nav-3' class="slide-out-3"><a href="#subjects">Subjects</a></li>
+                    <li id='nav-4' class="slide-out-4"><a href="#contacts">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+
+        <!-- Menu Bars -->
+        <div class="menu-bars" id="menu-bars">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        </div>
+    </div>
+    <section class="home" id="home">
+            <div class="home-overlay"></div>
+            <div class="video-background">
+                <video  muted loop autoplay src="videos/background-light.mp4" id="section-video-background">
+                </video>
+            </div>
+            <div class="container">
+                <h1>CHALLANGE</h1>
+                <p>A place for Strenght and Knowledge</p>
+            </div>
+    </section>
+    <section id="subjects">
+
+        <!-- Your Progress Section -->
+        <div class="cool-bar"></div>
+        <div class="subject-container">
+            <div class="heading"><h1>Subjects</h1></div>
+            <div class="level">
+                <div class="profile">
+                    <img src="images/You.png" alt="You">
+                    <span>Level 1</span>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="progress-container">
+                    <div class="progress">
+                        <div><span>Total Win 60%</span><span class="end">Total Lost 40%</span></div>
+                        <div class="progress-percent"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="subject">
+                <div class="subjects">
+
+                    <!-- Physics Summary -->
+                    <a href="examGround.html">
+                        <div class="container" onclick="runPhysics()">
+                            <div class="heading"><h3>Physics</h3></div>
+                            <div class="image">
+                                <img src="images/physics.svg" alt="Physics" class="sub-image">
+                                <video src="videos/physics.mp4" muted loop autoplay hidden class="sub-video"></video>
+                                <div class="video-borders"></div>
+                            </div>
+                            <div class="progress-container2">
+                                <div class="progress">
+                                    <div class="percent"><span id="phy-progress">60%</span><span id="phy-progress2">40%</span></div>
+                                    <div class="percent2"></div>
+                                </div>
+                            </div>
+                            <div class="last-challange">
+                                <div class="challange-container">
+                                    <div class="scores">
+                                        <div class="you"><img src="images/You.png" alt="You"></div>
+                                        <div class="versus"><span>4:4</span></div>
+                                        <div class="computer"><img src="images/Computer.png" alt="Computer"></div>
+                                    </div>
+                                    <div class="date">
+                                        <span>10:00am</span>
+                                        <span>15/02/2022</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                
+                    <!-- Mathematics Sumaary -->
+                    <a href="examGround.html">
+                        <div class="container" onclick="runMathematics()">
+                            <div class="heading"><h3>Mathematics</h3></div>
+                            <div class="image">
+                                <img src="images/mathematics.svg" alt="" class="sub-image">
+                                <video src="videos/mathematics.mp4" muted loop autoplay hidden class="sub-video"></video>
+                            </div>
+                            <div class="progress-container2">
+                                <div class="progress">
+                                    <div class="percent"><span id="maths-progress1">60%</span><span id="maths-progress2">40%</span></div>
+                                    <div class="percent2"></div>
+                                </div>
+                            </div>
+                            <div class="last-challange">
+                                <div class="challange-container">
+                                    <div class="scores">
+                                        <div class="you"><img src="images/You.png" alt="You"></div>
+                                        <div class="versus"><span>4:4</span></div>
+                                        <div class="computer"><img src="images/Computer.png" alt="Computer"></div>
+                                    </div>
+                                    <div class="date">
+                                        <span id="maths-time">10:00am</span>
+                                        <span>15/02/2022</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                  
+                    <!-- Chemistory Summary -->
+                    <a href="examGround.html">
+                        <div class="container" onclick="runChemistry()">
+                            <div class="heading"><h3>Chemistry</h3></div>
+                            <div class="image">
+                                <img src="images/chemistry.svg" alt="Chemistry" class="sub-image">
+                                <video src="videos/chemistry.mp4" muted loop autoplay hidden class="sub-video"></video>
+                            </div>
+                            <div class="progress-container2">
+                                <div class="progress">
+                                    <div class="percent"><span>60%</span><span>40%</span></div>
+                                    <div class="percent2"></div>
+                                </div>
+                            </div>
+                            <div class="last-challange">
+                                <div class="challange-container">
+                                    <div class="scores">
+                                        <div class="you"><img src="images/You.png" alt="You"></div>
+                                        <div class="versus"><span>4:4</span></div>
+                                        <div class="computer"><img src="images/Computer.png" alt="Computer"></div>
+                                    </div>
+                                    <div class="date">
+                                        <span>10:00am</span>
+                                        <span>15/02/2022</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Biology Summary -->
+                    <a href="examGround.html">
+                        <div class="container" onclick="runBiology()">
+                            <div class="heading"><h3>Biology</h3></div>
+                            <div class="image">
+                                <img src="images/biology.svg" alt="Biology" class="sub-image">
+                                <video src="videos/biology.mp4" muted loop autoplay hidden class="sub-video"></video>
+                            </div>
+                            <div class="progress-container2">
+                                <div class="progress">
+                                    <div class="percent"><span>60%</span><span>40%</span></div>
+                                    <div class="percent2"></div>
+                                </div>
+                            </div>
+                            <div class="last-challange">
+                                <div class="challange-container">
+                                    <div class="scores">
+                                        <div class="you"><img src="images/You.png" alt="You"></div>
+                                        <div class="versus"><span>4:4</span></div>
+                                        <div class="computer"><img src="images/Computer.png" alt="Computer"></div>
+                                    </div>
+                                    <div class="date">
+                                        <span>10:00am</span>
+                                        <span>15/02/2022</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- English Summary -->
+                    <a href="examGround.html">
+                        <div class="container" onclick="runEnglish()">
+                            <div class="heading"><h3>English</h3></div>
+                            <div class="image">
+                                <img src="images/english.svg" alt="English" class="sub-image">
+                                <video src="videos/english.mp4" muted loop autoplay hidden class="sub-video"></video>
+                            </div>
+                            <div class="progress-container2">
+                                <div class="progress">
+                                    <div class="percent"><span>60%</span><span>40%</span></div>
+                                    <div class="percent2"></div>
+                                </div>
+                            </div>
+                            <div class="last-challange">
+                                <div class="challange-container">
+                                    <div class="scores">
+                                        <div class="you"><img src="images/You.png" alt="You"></div>
+                                        <div class="versus"><span>4:4</span></div>
+                                        <div class="computer"><img src="images/Computer.png" alt="Computer"></div>
+                                    </div>
+                                    <div class="date">
+                                        <span>10:00am</span>
+                                        <span>15/02/2022</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                   
+                    <!-- Geography Summary -->
+                    <a href="examGround.html">
+                        <div class="container" onclick="runGeography()">
+                            <div class="heading"><h3>Geography</h3></div>
+                            <div class="image">
+                                <img src="images/geography.svg" alt="Geography" class="sub-image">
+                                <video src="videos/geography.mp4" muted loop autoplay hidden class="sub-video"></video>
+                            </div>
+                            <div class="progress-container2">
+                                <div class="progress">
+                                    <div class="percent"><span>60%</span><span>40%</span></div>
+                                    <div class="percent2"></div>
+                                </div>
+                            </div>
+                            <div class="last-challange">
+                                <div class="challange-container">
+                                    <div class="scores">
+                                        <div class="you"><img src="images/You.png" alt="You"></div>
+                                        <div class="versus"><span>4:4</span></div>
+                                        <div class="computer"><img src="images/Computer.png" alt="Computer"></div>
+                                    </div>
+                                    <div class="date">
+                                        <span>10:00am</span>
+                                        <span>15/02/2022</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="satistics" id="satistics">
+
+    </section>
+    <section class="about" id="about">
+
+    </section>
+    <script type="text/javascript" src="javaScripts/script.js"></script>
+</body>
+</html>

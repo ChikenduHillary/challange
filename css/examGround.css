@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Eczar&family=Exo+2&family=Gideon+Roman&family=Russo+One&family=Source+Code+Pro&display=swap');
+
+:root {
+    --primary-color: black;
+    --secondary-color: white;
+    --text-color: rgba(0, 0, 0, 0.9);
+    --background-color: rgb(255, 255, 255);
+    --on-background-color: rgb(255, 255, 255);
+    --input-container: white;
+}
+  
+  [data-theme="dark"] {
+    --primary-color: white;
+    --secondary-color: #555;
+    --text-color: rgba(255, 255, 255, 0.9);
+    --background-color: #121212;
+    --on-background-color: #272727;
+    --input-container: #363636;
+}
+  
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+.fa-times {
+    color: red;
+}
+
+.fa-check {
+    color: #04d743;
+}
+
+.exit {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: fixed;
+    top: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.34) 0px 3px 8px;
+    border-radius: 50%;
+    right: 2rem;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.exit div {
+    width: 80%;
+    height: .2rem;
+    background: var(--primary-color);
+    color: var(--primary-color);
+    margin: auto;
+    position: relative;
+    top: 46%;
+    border-radius: 5px;
+}
+
+.exit #home-icon{
+    margin: 3px 3px 0 3px;
+    font-size: 30px;
+    color: var(--primary-color);
+    opacity: .8;
+} 
+.exit .exit1{
+    transform: rotate(45deg);
+}
+
+.exit .exit2 {
+    transform: rotate(-45deg);
+    top: 40%;
+}
+
+.summary, .exampage, .results, .corrections {
+    width: 75vw;
+    height: 90vh;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.34) 0px 3px 8px;
+    margin: auto;
+    margin-top: 2rem;
+    background-color: var(--on-background-color);
+}
+
+.summary .challange-container {
+    height: 86%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.summary .heading {
+    height: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+.summary .heading h1 {
+    font-size: 2.5rem;
+}
+
+.summary .challange {
+    width: 60%;
+    height: 100%;
+}
+
+.summary .challange .image {
+    width: 100%;
+    height: 55%;
+    text-align: center;
+}
+
+.summary .challange img, .summary .challange video {
+    width: 100%;
+    height: 100%;
+}
+
+.summary .challange video {
+    width: 85%;
+    border-radius: 20px;
+}
+
+.summary .challange .progress-container {
+    width: 100%;
+    height: 45%;
+}
+
+.summary .progress-container .progress-bar {
+    width: 85%;
+    margin: auto;
+    height: 2rem;
+    background-color: #555;
+    border-radius: 15px;
+    position: relative;
+    top: 35%;
+    box-shadow: rgba(0, 0, 0, 0.34) 0px 3px 8px;
+}
+
+.summary .progress-container .progress-bar .percent {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 80%;
+    padding: 0px 3px;
+}
+
+.summary .progress-container .progress-bar .progress {
+    width: 60%;
+    height: 100%;
+    border-radius: 15px;
+    position: relative;
+    bottom: 57%;
+    background: #04d743;
+}
+
+.summary .challange button {
+    width: 60%;
+    height: 3rem;
+    background-color: #04d743;
+    border: none;
+    border-radius: 22px;
+    color: white;
+    font-size: 1rem;
+    position: relative;
+    top: 55%;
+    left: 20%;
+    box-shadow: rgba(0, 0, 0, 0.34) 0px 3px 8px;
+    font-family: 'Courgette', cursive;
+}
+
+.summary .satistics {
+    width: 40%;
+    height: 100%;
+    position: relative;
+    bottom: 1.2rem;
+}
+
+.summary .satistics .challange {
+    width: 88%;
+    height: 18%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.34) 0px 3px 8px;
+    margin: auto;
+    margin-bottom: 1rem;
+    background-color: var(--input-container);
+}
+
+.summary .satistics .challange .image-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70%;    
+}
+
+.summary .satistics .challange .image-container div {
+    width: 33%;
+    height: 100%;
+    text-align: center;
+}
+
+.summary .satistics .challange .image-container span {
+    letter-spacing: 3px;
+    font-size: 2rem;
+    position: relative;
+    top: 35%;
+}
+
+.summary .satistics .challange img {
+    height: 90%;
+    width: 55%;
+    margin: auto;
+    margin-top: 3.5px;
+}
+
+.summary .satistics .challange .dates {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.summary .satistics .challange .dates span {
+    margin: 4px 1.8rem 0 1.8rem;
+}
+
+.exampage .timer{
+    width:  100%;
+    height: 5%;
+    border-radius: 50px 0px 0px 0px;
+ 
+}
+
+.exampage .timer div {
+    height: 100%;
+    width: 70%;
+    background-color: #04d743;
+    border-radius: 50px 0px 0px 0px;
+}
+
+.exampage .question-container {
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+}
+
+.exampage .question-container p {
+    font-size: 120%;
+    padding: 1rem;
+}
+
+.exampage form {
+    height: 70%;
+    width: 100%;
+    font-family: 'Courgette', cursive;
+}
+
+.exampage .options-container {
+    width: 55%;
+    height: 70%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.34) 0px 3px 8px;
+    background-color: var(--input-container);
+}
+
+.exampage .options-container div {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+}
+
+.exampage .options-container div input {
+    width: 10%;
+    height: 40%;
+    margin-top: 1rem;
+}
+
+.exampage .options-container div label {
+    width: 90%;
+    height: 100%;
+    padding-top: .5rem;
+    padding-left: .2rem;
+    font-size: 1.5rem;
+}
+
+.exampage form .check-answers {
+    width: 100%;
+    height: 25%;
+}
+
+.exampage form .check-answers div {
+    width: 50%;
+    height: 40%;
+    margin: auto;
+}
+
+.exampage form .check-answers button, .rematch-container div button {
+    width: 100%;
+    height: 100%;
+    margin-top: 2.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background: #04d743;
+    box-shadow: rgba(0, 0, 0, 0.34) 0px 3px 8px;
+    cursor: pointer;
+    font-family: 'Courgette', cursive;
+}
+
+.results {
+    height: 600px;
+    font-family: 'Eczar', serif;
+}
+
+.results .winLost {
+    height: 16%;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.results .winLost h2 {
+    width: 7rem;
+    height: 2.5rem;
+    background-color: #04d743;
+    margin: auto;
+    border-radius: 10px;
+    color: white;
+    padding-top: 1rem;
+    padding-left: .8rem;
+}
+
+.results .scores {
+    width: 100%;
+    height: 30%;
+}
+
+.results .score-container {
+    width: 35rem;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.results .score-container div {
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.results .score-container div img {
+    width: 70%;
+    height: 70%;
+}
+
+.results .score-container div h3 {
+    margin: 0;
+}
+
+.results .score-container .span {
+    padding-top: 4.3rem;
+    font-size: 2rem;
+    height: 60%;
+    letter-spacing: 5px;
+}
+
+.score2 {
+    width: 100%;
+    height: 33%;
+}
+
+.score2 .score2-container {
+    width: 15rem;
+    height: 85%;
+    box-shadow: rgba(0, 0, 0, 0.34) 0px 3px 8px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 1rem;
+    background-color: var(--input-container);
+}
+
+.score2 .score2-container div {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.score2 .score2-container div i {
+    width: 1rem;
+    height: 1rem;
+    margin: 0rem 1rem;
+}
+
+.rematch-container {
+    width: 100%;
+    height: 17%;
+    margin-top: 10px;
+}
+
+.rematch-container div {
+    height: 100%;
+    width: 25rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.rematch-container div button {
+    height: 50%;
+    width: 90%;
+    margin: unset;
+    margin-bottom: 8px;
+}
+
+.corrections {
+    border-radius: 35px;
+    font-family: 'Courgette', cursive;
+}
+
+.corrections .correction-header {
+    width: 100%;
+    text-align: center;
+    height: 8%;
+}
+
+.corrections .questions {
+    width: 100%;
+    text-align: center;
+    height: 25%;
+}
+
+.corrections .opponent-answers {
+    width: 70%;
+    height: 12%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.corrections .opponent-answers .you, .corrections .opponent-answers .computer{
+    width: 80px;
+    height: 100%; 
+}
+
+.corrections .opponent-answers div img {
+    height: 80%;
+    width: 80%;
+    display: block;
+}
+
+.corrections .opponent-answers .computer img{
+    margin-left: .6rem;
+}
+
+.corrections .opponent-answers div div{
+    display: flex;
+    flex-direction: row;
+}
+
+.corrections .opponent-answers div i {
+    margin: 3px;
+}
+
+.corrections .answers {
+    width: 100%;
+    height: 35%;
+    margin-top: 1.5rem;
+}
+
+.corrections .answers form {
+    width: 20rem;
+    height: 100%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.34) 0px 3px 8px;
+    background-color: var(--input-container);
+}
+
+.corrections .answers form div {
+    width: 100%;
+    height: 17%;
+    font-size: 1.5rem;
+    padding-top: .8rem ;
+}
+
+.corrections .nextPrev-buttons {
+    height: 12%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;    
+    margin: auto;
+}
+
+.corrections .nextPrev-buttons button {
+    height: 60%;
+    width: 30%;
+    margin-top: 1rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.34)0px 3px 8px;
+    border-radius: 15px;
+    color: white;
+    font-family: 'Courgette', cursive;
+}
+
+.corrections .nextPrev-buttons .prev{
+    background-color: #809fa8;
+}
+
+.corrections .nextPrev-buttons .next{
+    background-color: #04d743;
+}
+
+@media (max-width: 1024px) {
+    .summary, .exampage, .results, .corrections{
+        height: 40rem;
+        width: 50rem;
+    }
+}
+
+@media (max-width: 912px) {
+    .exit {
+        top: .5rem;
+        right: 1rem;
+    }
+
+    .summary {
+        height: 1200px;
+    }
+
+    .summary .challange-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .summary .challange {
+        width: 100%;
+        height: 50%;
+    }
+
+    .summary .satistics {
+        width: 60%;
+        bottom: 0px;
+        top: 3rem;
+        height: 50%;
+        margin: auto;
+    }
+
+    .summary .satistics .challange {
+       height: 85px;
+    }
+}
+
+@media (max-width: 600px) {
+    .exampage, .results, .summary, .corrections {
+        width: 95vw;
+        border-radius: 25px;
+    }
+
+    .exampage, .results, .corrections {
+        height: 95vh;
+    }
+
+    .exampage .timer{
+        height: 4%;
+    }
+
+    .exampage, .results {
+        height: 98vh;
+    }
+
+    .summary .heading {
+        height: 5%;
+    }
+
+    .summary .satistics {
+        width: 100%;
+    }
+
+    .summary .satistics .challange {
+        height: 90px;
+    }
+
+    .exampage .question-container {
+        width: 100%;
+        height: 35%;
+    }
+
+    .exampage .options-container {
+        width: 80%;
+        height: 50%;
+    }
+
+    .exampage form .check-answers div {
+        width: 80%;
+    }
+
+    .results .score-container div img {
+        height: 7rem;
+        width: 6rem;
+    }
+
+    .results .score-container {
+        width: 95%;
+    }
+
+    .results .score-container2 {
+        width: 90%;
+    }
+
+    .rematch-container div {
+        width: 100%;
+    }
+    
+    .corrections .opponent-answers {
+        width: 90%;
+        height: 10%;
+    }
+
+    .corrections .answers form {
+        width: 90%;
+    }
+
+    .corrections .nextPrev-buttons button {
+        width: 45%;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .summary .challange video {
+        width: 85%;
+        height: 68%;
+        border-radius: 20px;
+        margin-top: 3rem;
+    }
+}
