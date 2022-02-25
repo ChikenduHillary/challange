@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Eczar&family=Exo+2&family=Gideon+Roman&family=Russo+One&family=Source+Code+Pro&display=swap');
 
 :root {
     --primary-color: black;
@@ -228,16 +227,15 @@ body {
 
 .exampage .timer{
     width:  100%;
-    height: 5%;
-    border-radius: 50px 0px 0px 0px;
- 
+    height: 9%;
 }
 
 .exampage .timer div {
-    height: 100%;
-    width: 70%;
+    height: 15%;
     background-color: #04d743;
-    border-radius: 50px 0px 0px 0px;
+    border-radius: 3px;
+    position: relative;
+    top: 70%;
 }
 
 .exampage .question-container {
@@ -253,7 +251,7 @@ body {
 }
 
 .exampage form {
-    height: 70%;
+    height: 65%;
     width: 100%;
     font-family: 'Courgette', cursive;
 }
@@ -284,7 +282,7 @@ body {
     height: 100%;
     padding-top: .5rem;
     padding-left: .2rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .exampage form .check-answers {
@@ -490,9 +488,15 @@ body {
 .corrections .answers form div {
     width: 100%;
     height: 17%;
-    font-size: 1.5rem;
-    padding-top: .8rem ;
+    font-size: 1rem;
+    padding-top: 1rem ;
+} 
+
+.corrections .answers form div input{
+    height: 1.4rem; 
+    width: 1.4rem;
 }
+
 
 .corrections .nextPrev-buttons {
     height: 12%;
@@ -560,7 +564,7 @@ body {
        height: 85px;
     }
 }
-
+ 
 @media (max-width: 600px) {
     .exampage, .results, .summary, .corrections {
         width: 95vw;
@@ -631,9 +635,23 @@ body {
         width: 90%;
     }
 
+    .corrections .answers form div {
+        padding-top: 1.4rem;
+    }
+
     .corrections .nextPrev-buttons button {
         width: 45%;
         font-size: 1.3rem;
+    }
+
+    .corrections .answers form div input {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    
+    .corrections .answers form div label {
+        position: relative;
+        bottom: .4rem;
     }
 }
 
