@@ -1,3 +1,5 @@
+let englishHistory = [];
+
 const englishQuestions = [
     {
         question : 'Choose the option that best completes the gap. While the worshippers closed there eyes in prayers, a theif made _______ with the collection',
@@ -97,5 +99,3 @@ const englishQuestions = [
     },
     
 ]
-
-console.log('english')

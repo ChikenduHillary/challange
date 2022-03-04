@@ -1,3 +1,5 @@
+let chemistryHistory = [];
+
 const chemistryQuestions = [
     {
         question : 'According to Charles Law, the volume of a gas becomes zero at',
@@ -95,6 +97,89 @@ const chemistryQuestions = [
         answer :'covalent bond formation',
         duration : 10
     },
+    {
+        question : 'In an electrochemical cell, polarization is caused by',
+        options : ['Oxygen', 'Hydrogen', 'Tetraoxosulphate(IV)acid', 'Chlorine'],
+        answer :'Hydrogen',
+        duration : 10
+    },
+    {
+        question : 'The enzyme used in the hydrolysis of starch to dextrin and maltose is',
+        options : ['Zymase', 'Sucrase', 'Amylase', 'Lactase'],
+        answer :'Amylase',
+        duration : 10
+    },
+    {
+        question : 'Ammonium chloride can be seperated from its mixture with common salt by',
+        options : ['Distillation', 'Evaporation', 'Decantation', 'Sublimation'],
+        answer :'Sublimation',
+        duration : 10
+    },
+    {
+        question : 'The ability of carbon to form long chains is referred to as',
+        options : ['Alkylation', 'Acylation', 'Carbonation', 'Catenation'],
+        answer :'Catenation',
+        duration : 10
+    },
+    {
+        question : 'The Industrial preparation of hydrogen gas from water gas is referred to as',
+        options : ['Bosch process', 'Contact process', 'Haber process', 'Bayer process'],
+        answer :'Bosch process',
+        duration : 10
+    },
+    {
+        question : 'The colour of litmus in an alkaline medium is',
+        options : ['Red', 'Yellow', 'Blue', 'Pink'],
+        answer :'Blue',
+        duration : 10
+    },
+    {
+        question : 'The process that requires the use of hardwater in its operation is',
+        options : ['Tanning', 'Bottling', 'Laundry', 'Dyeing'],
+        answer :'Bottling',
+        duration : 10
+    },
+    {
+        question : 'An example of an acidic oxide is',
+        options : ['NO', 'CO', 'SO2', 'CuO'],
+        answer :'SO2',
+        duration : 10
+    },
+    {
+        question : 'Diamond cannot be used',
+        options : ['In making bicycle chains', 'As abrasives', 'In cutting glass and metals', 'As die for drawing wires'],
+        answer :'In making bicycle chains',
+        duration : 10
+    },
+    {
+        question : 'The arrangement of particles in crystal  lattices can be studied using',
+        options : ['X-rays', 'β-rays', 'α-rays', 'Ɣ-rays'],
+        answer :'In making bicycle chains',
+        duration : 10
+    },
+    {
+        question : 'An example of a solid emulsion is',
+        options : ['Butter', 'Hair cream', 'Milk', 'Cod-liver oil'],
+        answer :'Butter',
+        duration : 10
+    },
+    {
+        question : 'The gas that is used for the treatment of cancer is',
+        options : ['Neon', 'Radon', 'Xenon', 'Argon'],
+        answer :'Radon',
+        duration : 10
+    },
+    {
+        question : 'Chemicals that are produced in small quantities and with very high degree of purity are',
+        options : ['Bulk chemicals', 'Fine chemicals', 'Heavy chemicals', 'Light Chemicals'],
+        answer :'Fine chemicals',
+        duration : 10
+    },
+    {
+        question : 'Metals can be stretched into wires because they are',
+        options : ['Ductile', 'Good conductors', 'Lustrous', 'Malleable'],
+        answer :'Ductile',
+        duration : 10
+    },
 ]
 
-console.log('chemistry')

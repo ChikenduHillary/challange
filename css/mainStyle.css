@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
 
 :root {
   --primary-color: black;
@@ -27,6 +28,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: 'Lora', serif;
 }
 
 /* --- Navigation Menu ------------------------------ */
@@ -419,7 +421,7 @@ section{
 
 .subject-container .heading h1{
   font-size: 4rem;
-  font-family: kaushan Script, sans-serif;
+  font-family: 'Lora', serif;
 }
 
 .subject-container .level {
@@ -476,7 +478,7 @@ section{
 
 .subject-container .progress-container .progress .progress-percent{
   background: #04d743;
-  width: 60%;
+  width: 0%;
   border-radius: 20px;
 }
 
@@ -512,6 +514,7 @@ section{
 .subject-container .subjects .heading h3 {
   margin: 0px;
   font-size: 1.5rem;
+  font-family: 'Lora', serif;
 }
 
 .subject-container .subjects .image {
@@ -549,16 +552,16 @@ section{
   display: flex;
   justify-content: space-between;
   position: relative;
-  bottom: 100%;
+  bottom: 120%;
 }
 
 .subject-container .progress-container2 .progress .percent2 {
-  width: 60%;
+  width: 0%;
   height: 100%;
   background-color: #04d743;
   border-radius: 15px;
   position: relative;
-  bottom: 110%;
+  bottom: 125%;
 }
 
 .subject-container .subjects .last-challange {

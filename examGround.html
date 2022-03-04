@@ -11,7 +11,7 @@
 </head>
 <body onload="callSubjects()">
     <!-- Exit button to Home and Exam -->
-    <div class="exit" id="exit-element">
+    <div class="exit" id="exit-element" onclick="homeIconDisplay()">
         <a href="index.html" id="home-icon"><i class="fa fa-home"></i></a>
         <div class="exit1" id="exit-div1" onclick="homeIconDisplay()" hidden></div>
         <div class="exit2" id="exit-div2" onclick="homeIconDisplay()" hidden></div>
@@ -28,7 +28,7 @@
                 </div>
                 <div class="progress-container">
                     <div class="progress-bar">
-                        <div class="percent"><span id="sub-progress1"></span><span id="sub-progress2"></span></div>
+                        <div class="percent"><span id="sub-progress1">0%</span><span id="sub-progress2">100%</span></div>
                         <div class="progress" id="sub-progress-bar"></div>
                     </div>
                     <button onclick="resetAndRun()">Tap to take a Challenge</button>
@@ -38,42 +38,42 @@
                 <div class="challange">
                     <div class="image-container">
                         <div><img src="images/You.png" alt="You"></div>
-                        <div><span id="score1">4:4</span></div>
+                        <div><span class="score">-:-</span></div>
                         <div><img src="images/Computer.png" alt="Computer"></div>
                     </div>
-                    <div class="dates"><span id="time1">10:00am</span><span id="date1">20/02/2020</span></div>
+                    <div class="dates"><span class="time">--:--</span><span class="date">--/--/----</span></div>
                 </div>
                 <div class="challange">
                     <div class="image-container">
                         <div><img src="images/You.png" alt="You"></div>
-                        <div><span id="score2">4:5</span></div>
+                        <div><span class="score">-:-</span></div>
                         <div><img src="images/Computer.png" alt="Computer"></div>
                     </div>
-                    <div class="dates"><span id="time2">10:00am</span><span id="date2">20/02/2020</span></div>
+                    <div class="dates"><span class="time">--:--</span><span class="date">--/--/----</span></div>
                 </div>
                 <div class="challange">
                     <div class="image-container">
-                        <div><img src="images/You.png" alt="Ypu"></div>
-                        <div><span id="score3">5:2</span></div>
+                        <div><img src="images/You.png" alt="You"></div>
+                        <div><span class="score">-:-</span></div>
                         <div><img src="images/Computer.png" alt=""></div>
                     </div>
-                    <div class="dates"><span id="time3">10:00am</span><span id="date3">20/02/2020</span></div>
+                    <div class="dates"><span class="time">--:--</span><span class="date">--/--/----</span></div>
                 </div>
                 <div class="challange">
                     <div class="image-container">
-                        <div><img src="images/You.png" alt="Ypu"></div>
-                        <div><span id="score4">3:4</span></div>
+                        <div><img src="images/You.png" alt="You"></div>
+                        <div><span class="score">-:-</span></div>
                         <div><img src="images/Computer.png" alt=""></div>
                     </div>
-                    <div class="dates"><span id="time4">10:00am</span><span id="date4">20/02/2020</span></div>
+                    <div class="dates"><span class="time">--:--</span><span class="date">--/--/----</span></div>
                 </div>
                 <div class="challange">
                     <div class="image-container">
-                        <div><img src="images/You.png" alt="Ypu"></div>
-                        <div><span id="score5">1:0</span></div>
+                        <div><img src="images/You.png" alt="You"></div>
+                        <div><span class="score">-:-</span></div>
                         <div><img src="images/Computer.png" alt=""></div>
                     </div>
-                    <div class="dates"><span id="time5">10:00am</span><span id="date5">20/02/2020</span></div>
+                    <div class="dates"><span class="time">--:--</span><span class="date">--/--/----</span></div>
                 </div>
             </div>
         </div>
@@ -86,7 +86,7 @@
         <div class="question-container">
             <span id="question-number">1.</span>
             <p id="exam-questions">
-                ratione accusantium libero necessitatibus ducimus? Pariatur enim totam molestiae minima.
+                ----
             </p>
         </div>
         <form id="exam-form">
@@ -117,9 +117,9 @@
         <div class="correction-header"><h2>Corrections</h2></div>
         <div class="questions">
             <span id="correction-span">1</span>
-             <p id="correction-question"> doloribus non fugiat, quis modi quidem tempora alias asperiores autem ab expedita officia!</p>
+             <p id="correction-question"> ---- </p>
         </div>
-        <div class="opponent-answers">
+        <!-- <div class="opponent-answers">
             <div class="you">
                 <img src="images/You.png" alt="You">
                 <div>
@@ -134,7 +134,7 @@
                     <span id="compt-answer-el">Wrong</span>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="answers">
             <form>
                 <div>
@@ -156,7 +156,7 @@
             </form>
         </div>
         <div class="nextPrev-buttons">
-            <button class="prev">Prev</button>
+            <button class="prev" id="prev-correction">Prev</button>
             <button class="next" id="next-correction">Next</button>
         </div>
     </div>
@@ -193,6 +193,8 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="javaScripts/geography.js"></script>
+    <script type="text/javascript" src="javaScripts/biology.js"></script>
     <script type="text/javascript" src="javaScripts/english.js"></script>
     <script type="text/javascript" src="javaScripts/chemistry.js"></script>
     <script type="text/javascript" src="javaScripts/mathematics.js"></script>

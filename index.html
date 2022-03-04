@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/mainStyle.css">
     <title>Challenge</title>
 </head>
-<body>
+<body onload="updateHomePage()">
         <!-- Dark Mode Switch -->
         <div class="theme-switch-wrapper">
             <label class="theme-switch">
@@ -28,10 +28,10 @@
             <div id='nav-1' class="slide-out-1">
                     <div class="level">
                         <img src="images/You.png" alt="User">
-                        <h3>level 1</h3>
+                        <h3 id="level1">level 0</h3>
                     </div>
                     <div class="mode-change">
-                        <span>Total Wins: 200</span><i class="fas fa-moon" id="mode"></i>
+                        <span id="total-wins">Total Wins: --</span><i class="fas fa-moon" id="mode"></i>
                     </div>
             </div>
             <div class="nav-links">
@@ -72,14 +72,14 @@
             <div class="level">
                 <div class="profile">
                     <img src="images/You.png" alt="You">
-                    <span>Level 1</span>
+                    <span id="level2">Level 0</span>
                 </div>
 
                 <!-- Progress Bar -->
                 <div class="progress-container">
                     <div class="progress">
-                        <div><span>Total Win 60%</span><span class="end">Total Lost 40%</span></div>
-                        <div class="progress-percent"></div>
+                        <div><span id="total-win">Total Win 0%</span><span class="end" id="total-lost">Total Lost 100%</span></div>
+                        <div class="progress-percent" id="progress-percent"></div>
                     </div>
                 </div>
             </div>
@@ -97,20 +97,20 @@
                             </div>
                             <div class="progress-container2">
                                 <div class="progress">
-                                    <div class="percent"><span id="phy-progress">60%</span><span id="phy-progress2">40%</span></div>
-                                    <div class="percent2"></div>
+                                    <div class="percent"><span id="phy-progress">0%</span><span id="phy-progress2">100%</span></div>
+                                    <div class="percent2" id="phy-progress-bar"></div>
                                 </div>
                             </div>
                             <div class="last-challange">
                                 <div class="challange-container">
                                     <div class="scores">
                                         <div class="you"><img src="images/You.png" alt="You"></div>
-                                        <div class="versus"><span>4:4</span></div>
+                                        <div class="versus"><span id="phy-last-compt">-:-</span></div>
                                         <div class="computer"><img src="images/Computer.png" alt="Computer"></div>
                                     </div>
                                     <div class="date">
-                                        <span>10:00am</span>
-                                        <span>15/02/2022</span>
+                                        <span id="phy-last-compt-time">--:--</span>
+                                        <span id="phy-last-compt-date">--/--/----</span>
                                     </div>
                                 </div>
                             </div>
@@ -127,20 +127,20 @@
                             </div>
                             <div class="progress-container2">
                                 <div class="progress">
-                                    <div class="percent"><span id="maths-progress1">60%</span><span id="maths-progress2">40%</span></div>
-                                    <div class="percent2"></div>
+                                    <div class="percent"><span id="maths-progress1">0%</span><span id="maths-progress2">100%</span></div>
+                                    <div class="percent2" id="maths-progress-bar"></div>
                                 </div>
                             </div>
                             <div class="last-challange">
                                 <div class="challange-container">
                                     <div class="scores">
                                         <div class="you"><img src="images/You.png" alt="You"></div>
-                                        <div class="versus"><span>4:4</span></div>
+                                        <div class="versus"><span id="maths-last-compt">-:-</span></div>
                                         <div class="computer"><img src="images/Computer.png" alt="Computer"></div>
                                     </div>
                                     <div class="date">
-                                        <span id="maths-time">10:00am</span>
-                                        <span>15/02/2022</span>
+                                        <span id="maths-last-compt-time">--:--</span>
+                                        <span id="maths-last-compt-date">--/--/----</span>
                                     </div>
                                 </div>
                             </div>
@@ -157,20 +157,20 @@
                             </div>
                             <div class="progress-container2">
                                 <div class="progress">
-                                    <div class="percent"><span>60%</span><span>40%</span></div>
-                                    <div class="percent2"></div>
+                                    <div class="percent"><span id="chem-progress">0%</span><span id="chem-progress2">100%</span></div>
+                                    <div class="percent2" id="chem-progress-bar"></div>
                                 </div>
                             </div>
                             <div class="last-challange">
                                 <div class="challange-container">
                                     <div class="scores">
                                         <div class="you"><img src="images/You.png" alt="You"></div>
-                                        <div class="versus"><span>4:4</span></div>
+                                        <div class="versus"><span id="chem-last-compt">-:-</span></div>
                                         <div class="computer"><img src="images/Computer.png" alt="Computer"></div>
                                     </div>
                                     <div class="date">
-                                        <span>10:00am</span>
-                                        <span>15/02/2022</span>
+                                        <span id="chem-last-compt-time">--:--</span>
+                                        <span id="chem-last-compt-date">--/--/----</span>
                                     </div>
                                 </div>
                             </div>
@@ -187,20 +187,20 @@
                             </div>
                             <div class="progress-container2">
                                 <div class="progress">
-                                    <div class="percent"><span>60%</span><span>40%</span></div>
-                                    <div class="percent2"></div>
+                                    <div class="percent"><span id="bio-progress">0%</span><span id="bio-progress2">100%</span></div>
+                                    <div class="percent2" id="bio-progress-bar"></div>
                                 </div>
                             </div>
                             <div class="last-challange">
                                 <div class="challange-container">
                                     <div class="scores">
                                         <div class="you"><img src="images/You.png" alt="You"></div>
-                                        <div class="versus"><span>4:4</span></div>
+                                        <div class="versus"><span id="bio-last-compt">-:-</span></div>
                                         <div class="computer"><img src="images/Computer.png" alt="Computer"></div>
                                     </div>
                                     <div class="date">
-                                        <span>10:00am</span>
-                                        <span>15/02/2022</span>
+                                        <span id="bio-last-compt-time">--:--</span>
+                                        <span id="bio-last-compt-date">--/--/----</span>
                                     </div>
                                 </div>
                             </div>
@@ -217,20 +217,20 @@
                             </div>
                             <div class="progress-container2">
                                 <div class="progress">
-                                    <div class="percent"><span>60%</span><span>40%</span></div>
-                                    <div class="percent2"></div>
+                                    <div class="percent"><span id="eng-progress">0%</span><span id="eng-progress2">100%</span></div>
+                                    <div class="percent2" id="eng-progress-bar"></div>
                                 </div>
                             </div>
                             <div class="last-challange">
                                 <div class="challange-container">
                                     <div class="scores">
                                         <div class="you"><img src="images/You.png" alt="You"></div>
-                                        <div class="versus"><span>4:4</span></div>
+                                        <div class="versus"><span id="eng-last-compt">-:-</span></div>
                                         <div class="computer"><img src="images/Computer.png" alt="Computer"></div>
                                     </div>
                                     <div class="date">
-                                        <span>10:00am</span>
-                                        <span>15/02/2022</span>
+                                        <span id="eng-last-compt-time">--:--</span>
+                                        <span id="eng-last-compt-date">--/--/----</span>
                                     </div>
                                 </div>
                             </div>
@@ -247,20 +247,20 @@
                             </div>
                             <div class="progress-container2">
                                 <div class="progress">
-                                    <div class="percent"><span>60%</span><span>40%</span></div>
-                                    <div class="percent2"></div>
+                                    <div class="percent"><span id="geo-progress">0%</span><span id="geo-progress2">100%</span></div>
+                                    <div class="percent2" id="geo-progress-bar"></div>
                                 </div>
                             </div>
                             <div class="last-challange">
                                 <div class="challange-container">
                                     <div class="scores">
                                         <div class="you"><img src="images/You.png" alt="You"></div>
-                                        <div class="versus"><span>4:4</span></div>
+                                        <div class="versus"><span id="geo-last-compt">-:-</span></div>
                                         <div class="computer"><img src="images/Computer.png" alt="Computer"></div>
                                     </div>
                                     <div class="date">
-                                        <span>10:00am</span>
-                                        <span>15/02/2022</span>
+                                        <span id="geo-last-compt-time">--:--</span>
+                                        <span id="geo-last-compt-date">--/--/----</span>
                                     </div>
                                 </div>
                             </div>
